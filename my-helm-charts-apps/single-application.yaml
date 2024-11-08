@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: 'https://github.com/NaveenBalagouni/my-helm-repo-charts.git'
     path: my-helm-chart/charts
-    targetRevision: HEAD
+    targetRevision: main
     helm:
       valueFiles:
         - values.yaml
