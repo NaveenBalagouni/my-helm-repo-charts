@@ -5,11 +5,11 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    namespace: argocd-kt
-    server: 'https://target-vcluster.gartner.opsmx.net:443'
+    namespace: single-helm
+    server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://github.com/NaveenBalagouni/my-helm-repo-charts.git'
-    path: datas/helm/single-helm
+    path: my-helm-chart/charts
     targetRevision: HEAD
     helm:
       valueFiles:
